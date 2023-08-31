@@ -12,7 +12,7 @@ $\rho_{HI_{B}}=\sqrt{\frac{w'Gw}{w'Pw}}$
 
 and indicated that the ratio $\frac{\rho_{HI_{B}}}{\rho_{HI}}$ can be used to compare LPSI efficiency vs BLPSI efficiency; however,  in the latter case we at least need to know the estimates of $P$ and $G$, i.e., $\hat{P}$ and $\hat{G}$.
 
-	In addition, Equation (1) is only an assumption, not a result, and implies that $P$ and $G$ are the same. That is, $b=P^{-1}Gw=w$ only when $P=G$, which indicates that the BLPSI is a special case of the LPSI. Thus to obtain the selection response and the expected genetic gains per trait of the BLPSI, we need some information about $P$ and $G$. Assuming that BLPSI is indeed a particular case of the LPSI, the BLPSI selection response and the BLPSI expected genetic gains per trait could be written as 
+In addition, Equation (1) is only an assumption, not a result, and implies that $P$ and $G$ are the same. That is, $b=P^{-1}Gw=w$ only when $P=G$, which indicates that the BLPSI is a special case of the LPSI. Thus to obtain the selection response and the expected genetic gains per trait of the BLPSI, we need some information about $P$ and $G$. Assuming that BLPSI is indeed a particular case of the LPSI, the BLPSI selection response and the BLPSI expected genetic gains per trait could be written as 
 
 $R_B=k_I \sqrt{w'Pw}$
 
@@ -22,7 +22,7 @@ $E_B=k_I \frac{Gw}{\sqrt{w'Pw}}$
 
 respectively. The parameters of Equations (3) and (4) were defined earlier.
 
-	There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $\rho_{HI_B}=\sqrt{\frac{w'Gw}{w'Pw}}$ and BLPSI heritability $h^2_{I_B}=\frac{w'Gw}{w'Pw}$ are equal to 1. However, in practice, the estimated values of the $\rho_{HI_B}$ ($\hat{\rho}_{HI_B}$) are usually lower than the estimated values of the $\rho_{HI}$ ($\hat{\rho}_{HI}$).
+There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $\rho_{HI_B}=\sqrt{\frac{w'Gw}{w'Pw}}$ and BLPSI heritability $h^2_{I_B}=\frac{w'Gw}{w'Pw}$ are equal to 1. However, in practice, the estimated values of the $\rho_{HI_B}$ ($\hat{\rho}_{HI_B}$) are usually lower than the estimated values of the $\rho_{HI}$ ($\hat{\rho}_{HI}$).
 
 ```R
 
