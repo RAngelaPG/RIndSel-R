@@ -30,10 +30,10 @@ Please cite [Pacheco & et. Al, 2016](https://data.cimmyt.org/dataset.xhtml?persi
    library(devtools)                                                     #2# load the library
    install_git('https://github.com/RAngelaPG/RIndSel-R')                 #3# install BGLR from GitHub
 ```
-## 1. LPSI
+## Indexes
 ----------------------------------------------------------------
 
-**Examples LPSI-function**
+**Examples function**
 ----------------------------------------------------------------
 
   - [1. Linear Phenotypic Selection Index](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/LPSI.md)
