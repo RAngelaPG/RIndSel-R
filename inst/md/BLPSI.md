@@ -37,4 +37,4 @@ BLPSI(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.c
 
 ```
 
-[Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/README.md)
+[Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
