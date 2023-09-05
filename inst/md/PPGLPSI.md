@@ -5,6 +5,7 @@ This index is called predetermined proportional gain linear phenotypic selection
 Let $d'=(d_1, d_2,...,d_r)$ be a vector $rx1$ of the predetermined proportional gains and assume that $\mu_q$ is the population mean of the $q^{th}$ trait before selection. One objective could be to change $\mu_q$ to $\mu_q+d_q$, where $d_q$ is a predetermined change in $\mu_q$ (in the RLPSI, $d_q=0$, $q=1,2,...,r$, where $r$ is the number of predetermined proportional gains). We can solve this problem in a similar manner as we did in the RLPSI. That is, minimizing the mean squared difference between $I$ and $H$ under the restriction $D'U'Gb=0$, where $D'$ is:
 
 ```math
+D'=
 \begin{bmatrix}d_r & 0 & \cdots & 0 & -d_1 \\
 0 & d_r & \cdots & 0 & -d_2 \\
 \vdots & \vdots & \ddots & \vdots & \vdots\\
@@ -12,7 +13,7 @@ Let $d'=(d_1, d_2,...,d_r)$ be a vector $rx1$ of the predetermined proportional 
 ```
 is a Mallard (1972) matrix $(r-1)xr$ of predetermined proportional gains, $d_q$ (q=1,2,...,r) is the $q^{th}$ element of vector $d'$, $U'$ is the RLPSI matrix of restrictions of 1’s and 0’s, $G$ is the covariance matrix of genotypic values and $b$ is the LPSI vector of coefficients. Also, it is possible to minimize $E[(H-1)^2]$ under the restriction $U'Gb=\theta d$ (Tallis 1985), where $\theta$ is a proportionality constant. Both approaches are very similar but the equations obtained when introducing the $D'U'Gb=0$ restriction are simpler than when introducing $U'Gb=\theta d$ restrictions into the process of minimizing $E[(H-1)^2]$.
 
-### The maximized PPG-LPSI parameters}
+### The maximized PPG-LPSI parameters
 Let $M'=D'C'$ be the Mallard (1972) matrix of predetermined restrictions, where $C'=U'G$. Under the restriction $M'b=0$, we can minimize $E[(H-1)^2]$ assuming that $P$, $G$, $U'$, $D'$ and $w$ are known; that is, we need to minimize the function $\Phi(b,v)=b'Pb+w'Gw-2w'Gb+2v'M'b$ with respect to vectors $b$ and $v'=(v_1, v_2,...,v_{r-1})$, where $v$ is a vector of Lagrange multipliers. Equation (1) derivative results from $b$ and $v$, i.e.,
 
 ```math
@@ -69,8 +70,9 @@ Assuming that $H=w'g$ and $I_P=b'_P y$ have a bivariate joint normal distributio
 ### There only one optimum PPG-LGSI
 Let $S=C'P^{-1}C$, under the restriction $D'd=0$, Itoh and Yamada (1987) showed that $D(D'SD)^{-1}D'=S^{-1}-S^{-1}d(d'S^{-1}d)^{-1}d'S^{-1}$, from where substituting $S^{-1}-S^{-1}d(d'S^{-1}d)^{-1}d'S^{-1}$ for $D(D'SD)^{-1}D'$ in matrix $Q_M$, Equation (2) can be written as Equation (5), i.e., $b_M=b_T$. Therefore, the Mallard (1972) and Tallis (1985) vectors of coefficients are the same. In addition, Itoh and Yamada (1987) showed that the Harville (1975) vector of coefficients can written as $\frac{b_T}{\sigma_{I_T}}$, where $\sigma_{I_T}$ is the standard deviation of the variance of Tallis (1985) PPG-LPSI. Thus, in reality there is only one optimum PPG-LPSI.
 
-Itoh and Yamada (1987) also pointed out that matrix $D'$
+Itoh and Yamada (1987) also pointed out that matrix
 ```math
+D'=
 \begin{bmatrix}d_r & 0 & \cdots & 0 & -d_1 \\
 0 & d_r & \cdots & 0 & -d_2 \\
 \vdots & \vdots & \ddots & \vdots & \vdots\\
@@ -78,12 +80,14 @@ Itoh and Yamada (1987) also pointed out that matrix $D'$
 ```
 is only one example of several possible Mallard (1972) $D'$ matrices. They showed that any matrix $D'$ that satisfies condition $D'd=0$ is another Mallard (1972) matrix of predetermined proportional gains. According to Itoh and Yamada (1987), matrices:
 ```math
+D'=
 \begin{bmatrix}d_2 & -d_1 & 0 & \cdots & 0 & 0 \\
 0 & d_3 & -d_2 & \cdots & 0 & 0 \\
 \vdots & \vdots & \vdots & \ddots & \vdots & \vdots\\
 0 & 0 & 0 & \cdots & d_r & -d_{r-1}\end{bmatrix}
 ```
 ```math
+D'=
 \begin{bmatrix}d_2 & -d_1 & 0 & \cdots & 0 \\
 d_3 & 0 & -d_1 & \cdots & 0 \\
 \vdots & \vdots & \ddots & \vdots & \vdots\\
@@ -91,6 +95,7 @@ d_r & 0 & \cdots & 0 & -d_1\end{bmatrix}
 ```
 are also Mallard (1972) matrices of predetermined proportional gains because they satisfy condition $D'd=0$ . However, matrix $D'$
 ```math
+D'=
 \begin{bmatrix}d_r & 0 & \cdots & 0 & -d_1 \\
 0 & d_r & \cdots & 0 & -d_2 \\
 \vdots & \vdots & \ddots & \vdots & \vdots\\
