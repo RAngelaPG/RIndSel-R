@@ -1,6 +1,9 @@
 ## Molecular Eigen Selection Index Method (MESIM).
+MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M=\beta'_p p + \beta'_s s=\beta'_M p_ps$ and $Z_M=\theta'_1g+\theta'_2s=\theta'_M ggs$ , $\rho{Y
 
-MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M=\beta'_{p}p+\beta'_{s}s=\beta'_{M}p_{ps}$ and $Z_M=\theta'_1 g+\theta'_2 s=\theta'_M g_{gs}$ , $\rho_{Y_M Z_M}^2$ , where $s$ is the vector of records of the additive effects of QTLs associated with MM, $p'_{ps}=[p's']$, $g'_{gs}=[g's']$, $\beta'_M=[\beta'_P\beta'_s]$, and $\theta'_M=[\theta'_1\theta'_2]$. 
+MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M=\beta'_p p + \beta'$
+
+$Y_M=\beta'_{p}p+\beta'_{s}s=\beta'_{M}p_{ps}$ and $Z_M=\theta'_1 g+\theta'_2 s=\theta'_M g_{gs}$ , $\rho_{Y_M Z_M}^2$ , where $s$ is the vector of records of the additive effects of QTLs associated with MM, $p'_{ps}=[p's']$ , $g'_{gs}=[g's']$, $\beta'_M=[\beta'_P\beta'_s]$, and $\theta'_M=[\theta'_1\theta'_2]$. 
 
 In the illustrative example of Lande and Thompson (1990), $Y_M=\beta_p*p+\beta_s*s$, and $Z_{M}=\theta_{p}*G_{P}+\theta_{s}*s$ , where $p$ denotes the plant height and $s=x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$. 
 
