@@ -1,4 +1,4 @@
-#### Linear Phenotypic Selection Index LPSI (Smith).
+## Linear Phenotypic Selection Index LPSI (Smith).
 
 In 1936, Smith developed the methodology for the selection simultaneously on several variables based on the phenotypic linear combination of
 
