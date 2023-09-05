@@ -6,18 +6,11 @@ Consider the problem of increasing grain yield in corn while other phenotypic va
 
 Suppose we have $q$ variables and desired phenotypic improve the average of $qr$ of them while $r$ of them remain without average exchange, the index $Y=\beta'p$ must maximize  $\rho_{YZ} ^ 2$ under such conditions. The restrictions are introduced by through the matrix $ W$ of 0s and 1s, where 1s indicate that mean values of the variables remain unchanged, while the 0s indicate average changes in phenotypic variables, such so that $ W'G \beta =0 $. Let $C =GW$ , since $\rho_{YZ}$ is invariant under changes of scale, can assume that $ \beta 'P \beta = 1 $, so $ \theta 'G \beta$ should be maximized under the constraint $\beta'C = 0$ and $\beta' P \beta = 1$. Let $\tau$ and  $ v'=\left [{v_1 ... v_r} \right]$  Lagrange multipliers. 
 Should be maximized 
-\[ 
-\Psi =\theta'G \beta - \tau  (\beta'P \beta-1) -v 'C' \beta\]  
-In deriving $\Psi$ over $\beta$ and equate the result to null vector is 
-\[ 
-\theta'G-2 \tau P \beta -v'C' =0 
-\]
-Thus, the vector of coefficients of KN that maximizes $\rho_{YZ}^2$ is  $\beta_{KN}=[I -P^{-1}C (C'P^{-1}C)^{-1}C']\beta_S$, where $P^{-1}$ 
- is the inverse matrix $P$ and $\beta_S$ is the vector defined in Equation 3 (the subscript denotes Kempthorne and Nordskog KN). If $A=[ I - P^{-1} C(C'P ^{-1}C)^{-1}C']$, then 
-\[ 
- \beta_{KN} =A \beta_S.  
-\]
+$\Psi =\theta'G \beta - \tau  (\beta'P \beta-1) -v 'C' \beta$
 
+In deriving $\Psi$ over $\beta$ and equate the result to null vector is $\theta'G-2 \tau P \beta -v'C' =0$
+
+Thus, the vector of coefficients of KN that maximizes $\rho_{YZ}^2$ is  $\beta_{KN}=[I -P^{-1}C (C'P^{-1}C)^{-1}C']\beta_S$, where $P^{-1}$ is the inverse matrix $P$ and $\beta_S$ is the vector defined in Equation 3 (the subscript denotes Kempthorne and Nordskog KN). If $A=[ I - P^{-1} C(C'P ^{-1}C)^{-1}C']$, then $\beta_{KN} =A \beta_S$.
 
 ```R
 
