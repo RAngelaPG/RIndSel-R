@@ -30,7 +30,7 @@ block.ex<-FALSE                                                                 
 softR<-""                                                                                    #Use "" always.
 file.covG<-""                                                                                #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
 
-LPSI(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
+SmithIndex(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
 
 ```
 [Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
