@@ -1,4 +1,4 @@
-#### Linear Phenotypic Selection Index (LPSI)
+## Linear Phenotypic Selection Index (LPSI)
 
 To derive the LPSI theory, we assumed that the phenotypic ($P$) and the genotypic ($G$) covariance matrix, and the vector of economic values ($w$) are known. However, $P$, $G$ and $w$ are generally unknown and it is necessary to estimate them. There are many methods for estimating $P$ and $G$ (Lynch and Walsh 1998) and $w$ (Cotterill and Jackson 1985; Magnussen 1990). However, when the estimator of $P$ ($\hat{P}$) is not positive definite (all eigenvalues positive) or the estimator of $G$ ($\hat{G}$) is not positive semidefinite (no negative eigenvalues), the estimator of $G$ ($\hat{G}$) could be biased. In this case, the base linear phenotypic selection index (BLPSI):
 
