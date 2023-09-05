@@ -22,7 +22,7 @@ $E_B=k_I \frac{Gw}{\sqrt{w'Pw}}$
 
 respectively. The parameters of Equations (3) and (4) were defined earlier.
 
-There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $\rho_{HI_B}=\sqrt{\frac{w'Gw}{w'Pw}}$ and BLPSI heritability $h^2_{I_B}=\frac{w'Gw}{w'Pw}$ are equal to 1. However, in practice, the estimated values $\rho_{HI}_B}$ are usually lower than the estimated values $\rho_{HI}$.
+There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $\rho_{HI_B}=\sqrt{\frac{w'Gw}{w'Pw}}$ and BLPSI heritability $h^2_{I_B}=\frac{w'Gw}{w'Pw}$ are equal to 1. However, in practice, the estimated values $\rho_{HI_B}$ are usually lower than the estimated values $\rho_{HI}$.
 
 ```R
 
