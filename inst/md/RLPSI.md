@@ -4,9 +4,9 @@ Kempthorne and Nordskog (1959) proposed an index that incorporates restrictions 
 
 Consider the problem of increasing grain yield in corn while other phenotypic variables remain without exchange. In this situation Kempthorne and Nordskog (1959) (KN) proposed maximize $\rho_{YZ}^2$  incorporating constraints matrix genotypic variance-covariance. Bulmer (1980) showed that Kempthorne and Nordskog results (1959) also obtained maximize ${\theta}'G \beta$. In the derivation of the ISR Kempthorne and Nordskog (1959) follows the approach of Bulmer (1980). 
 
-Suppose we have $q$ variables and desired phenotypic improve the average of $qr$ of them while $r$ of them remain without average exchange, the index $Y=\beta'p$ must maximize  $\rho_{YZ}^2$ under such conditions. The restrictions are introduced by through the matrix $ W$ of 0s and 1s, where 1s indicate that mean values of the variables remain unchanged, while the 0s indicate average changes in phenotypic variables, such so that $W'G \beta =0$. Let $C =GW$ , since $\rho_{YZ}$ is invariant under changes of scale, can assume that $\beta 'P \beta = 1$, so $\theta 'G \beta$ should be maximized under the constraint $\beta'C = 0$ and $\beta' P \beta = 1$. 
+Suppose we have $q$ variables and desired phenotypic improve the average of $qr$ of them while $r$ of them remain without average exchange, the index $Y=\beta'p$ must maximize  $\rho_{YZ}^2$ under such conditions. The restrictions are introduced by through the matrix $W$ of 0s and 1s, where 1s indicate that mean values of the variables remain unchanged, while the 0s indicate average changes in phenotypic variables, such so that $W'G \beta =0$. Let $C =GW$ , since $\rho_{YZ}$ is invariant under changes of scale, can assume that $\beta 'P \beta = 1$, so $\theta 'G \beta$ should be maximized under the constraint $\beta'C = 0$ and $\beta' P \beta = 1$. 
 
-Let $\tau$ and  $ v'=\left [{v_1 ... v_r} \right]$  Lagrange multipliers. 
+Let $\tau$ and  $ v'=[v_1 ... v_r]$  Lagrange multipliers. 
 
 Should be maximized 
 $\Psi =\theta'G \beta - \tau  (\beta'P \beta-1) -v 'C' \beta$
