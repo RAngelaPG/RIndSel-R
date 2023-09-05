@@ -27,8 +27,8 @@ There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $
 ```R
 
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/examples/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/examples/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
+datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
+file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
 selval<-5                                                                                    #Selection intensity.
 design<-"lattice"                                                                            #Experimental design.
 corr<-FALSE                                                                                  #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
