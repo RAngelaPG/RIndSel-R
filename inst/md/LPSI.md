@@ -6,7 +6,7 @@ $Y = \beta'p$
 and
 $Z = \theta'g$
 
-Where $Y$ is the selection index, $p = [p_{1} , p_{2},\ldots, p_{q}]$ and $\beta = [b_{1}, b_{2},\ldots, b_{q}]$ is the vector of values Phenotypic and the coefficient vector of $Y$ respectively, $Z$ denotes the breeding value or net genetic component that can be gained through various selection cycles, $g = [g_{1}, g_{2}, \ldots, g_{q}]$ is the vector of values genotypic, and $\theta = [\theta_{1}, \theta_{2},\ldots, \theta_{q}]$ is the vector of economic weights, which according to Smith (1936), can be determined according to the experience of researchers and is regarded as a vector of constants. With the aim establish the relationship between phenotypic values $P_{j}$ $(j = 1, 2,\ldots, q)$ observable and unobservable genotype in (Smith, 1936) proposed the following model 
+Where $Y$ is the selection index, $p = [p_{1} , p_{2},\ldots, p_{q}]$ and $\beta = [b_{1}, b_{2},\ldots, b_{q}]$ is the vector of values phenotypic and the coefficient vector of $Y$ respectively, $Z$ denotes the breeding value or net genetic component that can be gained through various selection cycles, $g = [g_{1}, g_{2}, \ldots, g_{q}]$ is the vector of values genotypic, and $\theta = [\theta_{1}, \theta_{2},\ldots, \theta_{q}]$ is the vector of economic weights, which according to Smith (1936), can be determined according to the experience of researchers and is regarded as a vector of constants. With the aim establish the relationship between phenotypic values $P_{j}$ $(j = 1, 2,\ldots, q)$ observable and unobservable genotype in (Smith, 1936) proposed the following model 
 
 $P_{j} = g_{j} + \epsilon_{j}$ 
 
