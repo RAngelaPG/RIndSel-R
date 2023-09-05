@@ -1,4 +1,4 @@
-#### Eigen Selection Index Method (ESIM).
+## Eigen Selection Index Method (ESIM).
 
 The eigen selection index method (or ESIM for its acronym in English) is a selection method based on the IS Smith (1936) in which uses the theory of singular value decomposition to estimate the vector $\beta$ that maximizes the correlation $\rho_{ZY}$.
 
