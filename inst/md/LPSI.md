@@ -5,7 +5,7 @@ In 1936, Smith developed the methodology for the selection simultaneously on sev
 $Y = \beta'p$
 $Z = \theta'g$
 
-Where $Y$ is the selection index (SI), $p = [p_{1} , p_{2},\ldots, p_{q}]$ and $\beta = [b_{1}, b_{2},\ldots, b_{q}]$ is the vector of values Phenotypic and the coefficient vector of $Y$ respectively, $Z$ denotes the breeding value or net genetic component that can be gained through various selection cycles, $g = [g_{1}, g_{2}, \ldots, g_{q}]$ is the vector of values genotypic, and $\theta = [\theta_{1}, \theta_{2},\ldots, \theta_{q}]$ is the vector of economic weights, which according to Smith (1936), can be determined according to the experience of researchers and is regarded as a vector of constants. With the aim establish the relationship between phenotypic values $P_{j}$ $(j = 1, 2,\ldots, q)$ observable and unobservable genotype in (Smith, 1936) proposed the following model 
+Where $Y$ is the selection index, $p = [p_{1} , p_{2},\ldots, p_{q}]$ and $\beta = [b_{1}, b_{2},\ldots, b_{q}]$ is the vector of values Phenotypic and the coefficient vector of $Y$ respectively, $Z$ denotes the breeding value or net genetic component that can be gained through various selection cycles, $g = [g_{1}, g_{2}, \ldots, g_{q}]$ is the vector of values genotypic, and $\theta = [\theta_{1}, \theta_{2},\ldots, \theta_{q}]$ is the vector of economic weights, which according to Smith (1936), can be determined according to the experience of researchers and is regarded as a vector of constants. With the aim establish the relationship between phenotypic values $P_{j}$ $(j = 1, 2,\ldots, q)$ observable and unobservable genotype in (Smith, 1936) proposed the following model 
 
 $P_{j} = g_{j} + \epsilon_{j}$ 
 
@@ -13,7 +13,7 @@ Where $g_{j}$ is the genotypic value of the jth feature and $\epsilon_{j}$ is th
 
 $R=k \sigma_Z \rho_{YZ}=k \sigma_Z \frac{\theta' \Sigma \beta}{\sqrt{\theta'\Sigma\theta}\sqrt{\beta'S\beta}}$
 
-Where $\Sigma$ and $S$ are matrices variance-covariance matrix for phenotypic and genotypic values,respectively, $k$ is the standard differential selection, $\theta'\Sigma \beta$ is the covariance between SI and the breeding value, $\sigma^2_Z=\theta'\Sigma\theta$ is the variance of $Z$ and $\sigma^2_Y=\beta'S \beta}$ is the variance of SI, $\rho_{YZ}$ is the correlation between SI and the breeding value. In the Smith selection index $\beta_{s}=S^{-1} \Sigma \theta$ (where the subscript $S$ denotes the method of Smith, $S^{-1}$ is the inverse of the variance-covariance matrix of phenotypic $S$) allows us to construct the selection index, $Y =\beta_{s}'p$, which maximizes the correlation with the breeding value. 
+Where $\Sigma$ and $S$ are matrices variance-covariance matrix for phenotypic and genotypic values,respectively, $k$ is the standard differential selection, $\theta'\Sigma \beta$ is the covariance between SI and the breeding value, $\sigma^2_Z=\theta'\Sigma\theta$ is the variance of $Z$ and $\sigma^2_Y=\beta'S \beta$ is the variance of SI, $\rho_{YZ}$ is the correlation between SI and the breeding value. In the Smith selection index $\beta_{s}=S^{-1} \Sigma \theta$ (where the subscript $S$ denotes the method of Smith, $S^{-1}$ is the inverse of the variance-covariance matrix of phenotypic $S$) allows us to construct the selection index, $Y =\beta_{s}'p$, which maximizes the correlation with the breeding value. 
 
 ```R
 
