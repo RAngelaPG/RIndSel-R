@@ -6,11 +6,11 @@ The procedure of Lande and Thompson (1990) is based on a selection index which c
 
 As an illustrative example, assume that in the maize genome has a linkage map with ten molecular markers and the interest lies in enhancing the improvement of plant height; Suppose also that five QTLs with additive effects $\alpha_1$ , $\alpha_2$ ,$\ldots$, $\alpha_5$ have been identified in the genome associated with plant height and that the five QTLs are distributed at random from different chromosomes, ie, a QTL was found by chromosome. In practice, the idea of Lande and Thompson (1990) is to build a record (or score) by multiplying the values additives of the QTLs for the coded values of molecular markers (MM) to they are bound, ie, $s = x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$ , Where $x_i$ , $i = 1,2, ...,5$, denotes the coded values of the MM, which depend on the type of population that is used for selection in a population $F_2$ the possible values $x_i$ are 1, 0 and -1. In this situation, the IS is constructed as $Y_{LT}=\beta_p p + \beta_s s$ where $p$ denotes the height of plant, $s=x_1 \alpha_1 + x_2 \alpha_2+ ... + x_5 \alpha_5$ and what is desired is to maximize the correlation between $Y_{LT}$ and $Z = \theta_p g_p$ . In this case the vector can be shown that maximizes the correlation between $Y_{LT}$ y $Z=\theta _p g_p$ is $\beta_{LT} =T^{-1}K\theta_{LT}$, where $\beta '_{LT} =(\beta \beta'_s)$, $\theta'_{LT} =(-1 & 0)$, $T= 
 
-\left(                                     
-\begin{array}{cc}
-$\sigma _p^2$ & $\sigma _s^2$\\
-$\sigma _s^2$ &  $\sigma _s^2$\\
-\end{array}\right)$ 
+```math
+\begin{bmatrix}$\sigma _p^2$ & $\sigma _s^2$\\
+$\sigma _s^2$ &  $\sigma _s^2$\end{bmatrix}
+```
+
 and 
 $K= \left(                                     
 \begin{array}{cc}
