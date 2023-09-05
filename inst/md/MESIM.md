@@ -1,20 +1,34 @@
 ## Molecular Eigen Selection Index Method (MESIM).
 
-MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M ={\rm{\bf{\beta} '}}_p{\rm{\bf p}} +{\rm{\bf{\beta}'}}_s{\rm{\bf s}} ={\rm{\bf{\beta}'}}_M{\rm{\bf p}}_{ps}$  and $Z_M ={\rm{\bf{\theta } '}}_1{\rm{\bf g}} +{\rm{\bf{\theta}'}}_2{\rm{\bf s}} ={\rm{\bf {\theta}'}}_M{\rm{\bf g}}_{gs}$  , $\rho_{Y_M Z_M}^2$ , where ${\rm{\bf p}$ and ${\rm{\bf g}}$ have been defined in Equations 1 and 2, and ${\rm {\bf s}}$ is the vector of records of the additive effects of QTLs 
-associated with MM, ${\rm{\bf{p} '}}_{ps}=\left [{{\begin{array}{*{20} c} {{\rm{\bf{p} '}}} \hfill &{{\rm{\bf{s}'}}} \hfill \\ \end{array}}} \right]$, ${\rm{\bf{g} '}}_{gs}=\left [ {{\begin{array}{*{20} c} {{\rm{\bf{g} '}}} \hfill &{{\rm{\bf{s}'}}} \hfill \\ \end{array}}} \right]$, ${\rm{\bf{\beta} '}}_M = \left [ {{\begin{array}{*{20} c} {{\rm{\bf{\beta} '}}_P} \hfill &{{\rm{\bf{\beta}'}}_s} \hfill \\
-\end{array}}} \right]$, and ${\rm{\bf{\theta} '}}_M = \left [ {{\begin{array}{*{20} c} 
-{{\rm{\bf{\theta} '}}_1} \hfill &{{\rm{\bf{\theta}'}}_2} \hfill \\ \end{array}}} \right]$. In the illustrative example of Lande and Thompson (1990), $Y_M = \beta_p*p + \beta_s*s$, and $Z_M = \theta_p*G_P + \theta_s*s$ , where $p$ denotes the plant height and $s = x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$. 
+MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M =\beta'_p p+\beta'_s s=\beta'_M p_{ps}$ and $Z_M=\theta'_1 g+\theta'_2 s=\theta'_M g_{gs}$, $\rho_{Y_M Z_M}^2$ , where $p$ and $g$ have been defined in Equations 1 and 2, and $s$ is the vector of records of the additive effects of QTLs associated with MM, $p'_{ps}=[p's']$, $g'_{gs}=g's'$, $\beta'_M=\beta'_P\beta'_s$, and $\theta'_M=\theta'_1\theta'_2$. In the illustrative example of Lande and Thompson (1990), $Y_M=\beta_p*p+\beta_s*s$, and $Z_M=\theta_p*G_P+\theta_s*s$ , where $p$ denotes the plant height and $s=x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$. 
 
-Again, because $\rho_{Y_M Z_M }^2$  is invariant to changes in is maximized scale $\rho_{Y_M Z_M ^2}$ under the constraints ${\rm{\bf{\beta} '}}_M{\rm{\bf T \beta}}_M = 1$ $\beta '_M*T*\beta_M = 1$ and ${\rm{\bf{\theta} '}}_M{\rm{\bf K \theta}}_M =1$ $\theta '_M*K*\theta_M = 1$, so in MESIM, it is necessary maximize 
-\[
-\Phi = \left ({{\rm{\bf{\theta} '}}_M{\rm{\bf K \beta}}_M} \right) ^ 2 - \mu 
-\left ({{\rm{\bf{\beta} '}}_M{\rm{\bf T \beta}}_M -1} \right) - \omega 
-\left ({{\rm{\bf{\theta} '}}_M{\rm{\bf K \theta}_M} -1} \right) 
-\] 
-With respect to ${\rm{\bf \beta}}_M $, ${\rm{\bf \theta}}_M$, $\mu$ , and $\omega$, where ${\rm{\bf \beta}}_M$ is the vector of coefficients $\mbox{MESIM}$, ${\rm{\bf \theta}}_M$ is the vector of coefficients $Z_M ={\rm{\bf{\theta} '}}_M{\rm{\bf g}}_{gs}$ and $\mu$ and $\omega$ are Lagrange multipliers. Ceron-Rojas {et al}. (2008b) found that the solution is equal 
-\[ 
-\label{EQ4} 
-({\rm{\bf Q}} - \mu{\rm{\bf I}}){\rm{\bf \beta}}_M ={\rm{\bf 0}}, 
-\]
-where ${\rm{\bf Q}}={\rm{\bf T}} ^{-1}{\rm{\bf K}}$. Thus, in $\mbox{MESIM}$, the value that maximizes $\rho_{Y_M Z_M} ^ 2$ under the 
-constraints ${\rm{\bf{\beta} '}}_M{\rm{\bf T \beta}}_M = 1$ and ${\rm {\bf{\theta} '}}_M{\rm{\bf K \theta}}_M = 1$ is the first eigenvalue ($\mu$) Matrix ${\rm{\bf Q}}$, and the vector for building $Y_M$ (With maximum correlation with $Z_M ={\rm{\bf{\theta}'}}_M{\rm{\bf g}}_{gs})$ is the first eigenvector (${\rm{\bf \beta}}_M$) matrix ${\rm{\bf Q}}$.
+Again, because $\rho_{Y_M Z_M }^2$  is invariant to changes in is maximized scale $\rho_{Y_M Z_M ^2}$ under the constraints $\beta'_MT\beta_M=1$ $\beta'_M*T*\beta_M=1$ and $\theta'_M K \theta_M=1$ $\theta'_M*K*\theta_M=1$, so in MESIM, it is necessary maximize 
+
+$$\Phi=(\theta'_MK\beta_M)^2 - \mu (\beta'_MT\beta_M-1) - \omega(\theta'_MK\theta_M-1)$$
+
+With respect to $\beta_M$, $\theta_M$, $\mu$ , and $\omega$, where $\beta_M$ is the vector of coefficients MESIM, $\theta_M$ is the vector of coefficients $Z_M=\theta'_Mg_{gs}$ and $\mu$ and $\omega$ are Lagrange multipliers. Ceron-Rojas {et al}. (2008b) found that the solution is equal 
+
+$$(Q-\mu I)\beta_M=0$$
+
+where $Q=T^{-1}K$. Thus, in MESIM, the value that maximizes $\rho_{Y_M Z_M}^2$ under the constraints $\beta'_MT\beta_M=1$ and $\theta'_M K \theta_M=1$ is the first eigenvalue ($\mu$) Matrix $Q$, and the vector for building $Y_M$ (With maximum correlation with $Z_M=\theta'_Mg_{gs})$ is the first eigenvector ($\beta_M$) matrix $Q$.
+
+```R
+
+library(Rindsel)
+datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
+file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")             #name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                          #Selection intensity.
+design<-"lattice"                                                                                  #Experimental design.
+corr<-FALSE                                                                                        #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+rawdata<-TRUE                                                                                      #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_S2_05_Haplo.csv")   #name of the file markers information.
+file_nameQTL<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/QTL_scores_Simulated.csv")  #name of the file QTL information.
+one.env<-TRUE                                                                                      #Use FALSE for multienviromrent trials.
+block.ex<-FALSE                                                                                    #Use FALSE always.
+softR<-""                                                                                          #Use "" always.
+file.covG<-""                                                                                      #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
+
+MESIMIndex(datos,file.wgt,selval,design,corr,out="outextLT.txt",outcsv="outLT.csv",rawdata,file_nameMARK,file_nameQTL,one.env,block.ex,softR,file.covG)
+
+```
+[Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
