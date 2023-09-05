@@ -19,7 +19,7 @@ Please cite [Pacheco & et. Al, 2016](https://data.cimmyt.org/dataset.xhtml?persi
 **From CRAN (stable release)**.
 
 ```R
-  install.packages(pkg='RIndSel',repos='https://cran.r-project.org/')
+  install.packages(pkg='Rindsel',repos='https://cran.r-project.org/')
 ```
 
 **From GitHub (development version, added features)**.
@@ -28,7 +28,7 @@ Please cite [Pacheco & et. Al, 2016](https://data.cimmyt.org/dataset.xhtml?persi
 ```R
    install.packages(pkg='devtools',repos='https://cran.r-project.org/')  #1# install devtools
    library(devtools)                                                     #2# load the library
-   install_git('https://github.com/RAngelaPG/RIndSel-R')                 #3# install BGLR from GitHub
+   install_git('https://github.com/RAngelaPG/RIndSel-R')                 #3# install RIndSel from GitHub
 ```
 ## Indexes
 ----------------------------------------------------------------
