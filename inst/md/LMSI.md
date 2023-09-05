@@ -31,13 +31,13 @@ The case is considered more of a character is straightforward and all that chang
 
 library(Rindsel)
 datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
-selval<-5                                                                                    #Selection intensity.
-design<-"lattice"                                                                            #Experimental design.
-corr<-FALSE                                                                                  #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
-rawdata<-TRUE                                                                                #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
-file_nameMARK<-
-file_nameQTL<-
+file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")             #name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                          #Selection intensity.
+design<-"lattice"                                                                                  #Experimental design.
+corr<-FALSE                                                                                        #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+rawdata<-TRUE                                                                                      #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_S2_05_Haplo.csv")   #name of the file markers information.
+file_nameQTL<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/QTL_scores_Simulated.csv")  #name of the file QTL information.
 one.env<-TRUE                                                                                #Use FALSE for multienviromrent trials.
 block.ex<-FALSE                                                                              #Use FALSE always.
 softR<-""                                                                                    #Use "" always.
