@@ -32,3 +32,4 @@ file.covG<-""                                                                   
 LPSI(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
 
 ```
+[Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
