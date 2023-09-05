@@ -1,8 +1,10 @@
 ## Molecular Eigen Selection Index Method (MESIM).
 
-MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M=\beta'_p p+\beta'_s s=\beta'_M p_{ps}$ and $Z_M=\theta'_1 g+\theta'_2 s=\theta'_M g_{gs}$ , $\rho_{Y_M Z_M}^2$ , where $s$ is the vector of records of the additive effects of QTLs associated with MM, $p'_{ps}=[p's']$, $g'_{gs}=g's'$, $\beta'_M=\beta'_P\beta'_s$, and $\theta'_M=\theta'_1\theta'_2$. In the illustrative example of Lande and Thompson (1990), $Y_M=\beta_p*p+\beta_s*s$, and $Z_M=\theta_p*G_P+\theta_s*s$ , where $p$ denotes the plant height and $s=x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$. 
+MESIM is a generalization of ESIM to the case in which is incorporated MM information to IS, similarly as in the IS Lande and Thompson (1990). Following the basic idea of Kempthorne and Nordskog (1959), Ceron-Rojas {et al}. (2008b), maximized the correlation between $Y_M=\beta'_{p}p+\beta'_{s}s=\beta'_{M}p_{ps}$ and $Z_M=\theta'_1 g+\theta'_2 s=\theta'_M g_{gs}$ , $\rho_{Y_M Z_M}^2$ , where $s$ is the vector of records of the additive effects of QTLs associated with MM, $p'_{ps}=[p's']$, $g'_{gs}=[g's']$, $\beta'_M=[\beta'_P\beta'_s]$, and $\theta'_M=[\theta'_1\theta'_2]$. 
 
-Again, because $\rho_{Y_M Z_M }^2$  is invariant to changes in is maximized scale $\rho_{Y_M Z_M ^2}$ under the constraints $\beta'_MT\beta_M=1$ and $\beta'_M*T*\beta_M=1$ and $\theta'_M K \theta_M=1$ and $\theta'_M*K*\theta_M=1$, so in MESIM, it is necessary maximize 
+In the illustrative example of Lande and Thompson (1990), $Y_M=\beta_p*p+\beta_s*s$, and $Z_{M}=\theta_{p}*G_{P}+\theta_{s}*s$ , where $p$ denotes the plant height and $s=x_1 \alpha_1 + x_2 \alpha_2 + ... + x_5 \alpha_5$. 
+
+Again, because $\rho_{Y_{M}Z_{M}}^2$  is invariant to changes in is maximized scale $\rho_{Y_M Z_M ^2}$ under the constraints $\beta'_MT\beta_M=1$ and $\beta'_{M}*T*\beta_{M}=1$ and $\theta'_{M}K\theta_{M}=1$ and $\theta'_M*K*\theta_M=1$, so in MESIM, it is necessary maximize 
 
 $$\Phi=(\theta'_MK\beta_M)^2 - \mu (\beta'_MT\beta_M-1) - \omega(\theta'_MK\theta_M-1)$$
 
@@ -10,7 +12,7 @@ With respect to $\beta_M$, $\theta_M$, $\mu$ , and $\omega$, where $\beta_M$ is 
 
 $$(Q-\mu I)\beta_M=0$$
 
-where $Q=T^{-1}K$. Thus, in MESIM, the value that maximizes $\rho_{Y_M Z_M}^2$ under the constraints $\beta'_MT\beta_M=1$ and $\theta'_M K \theta_M=1$ is the first eigenvalue ($\mu$) Matrix $Q$, and the vector for building $Y_M$ (With maximum correlation with $Z_M=\theta'_Mg_{gs})$ is the first eigenvector ($\beta_M$) matrix $Q$.
+where $Q=T^{-1}K$. Thus, in MESIM, the value that maximizes $\rho_{Y_M Z_M}^2$ under the constraints $\beta'_{M}T\beta_{M}=1$ and $\theta'_{M}K\theta_{M}=1$ is the first eigenvalue ($\mu$) Matrix $Q$, and the vector for building $Y_M$ (With maximum correlation with $Z_{M}=\theta'_{M}g_{gs})$ is the first eigenvector ($\beta_M$) matrix $Q$.
 
 ```R
 
