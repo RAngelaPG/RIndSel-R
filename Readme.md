@@ -1,4 +1,4 @@
-## RIndSel: An R Package for calculated some different selection indeces
+## RIndSel: An R Package for calculated some different selection indices
 
 The RIndSel Package ([Pacheco & et. Al, 2016](https://data.cimmyt.org/dataset.xhtml?persistentId=hdl:11529/10854)) calculated some different index like: Base Linear Phenotypic
 Selection Index (BLPSI), Linear Phenotypic Selection Index (LPSI), Eigen Selection Index
