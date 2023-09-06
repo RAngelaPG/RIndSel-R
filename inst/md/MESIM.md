@@ -24,7 +24,7 @@ design<-"lattice"                                                               
 corr<-FALSE                                                                                        #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
 rawdata<-TRUE                                                                                      #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
 file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_S2_05_Haplo.csv")   #name of the file markers information.
-one.env<-TRUE                                                                                      #Use FALSE for multienviromrent trials.
+one.env<-TRUE                                                                                      #Use FALSE for multienviromment trials.
 block.ex<-FALSE                                                                                    #Use FALSE always.
 softR<-""                                                                                          #Use "" always.
 file.covG<-""                                                                                      #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
