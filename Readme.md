@@ -39,7 +39,7 @@ Please cite [Pacheco & et. Al, 2016](https://data.cimmyt.org/dataset.xhtml?persi
   - [1. Base Linear Phenotypic Selection Index (BLPSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/BLPSI.md)
   - [2. Linear Phenotypic Selection Index (LPSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/LPSI.md)
   - [3. Eigen Selection Index Method (ESIM)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/ESIM.md)
-  - [4. Predeterminated Proportional Gain Linear Phenotypic Selection Index (PPG-LPSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/PPG-LPSI.md)
+  - [4. Predeterminated Proportional Gain Linear Phenotypic Selection Index (PPG-LPSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/PPGLPSI.md)
   - [5. Restrictive Linear Phenotypic Selection Index (RLPSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/RLPSI.md)
   - [6. Restrictive Eigen Selection Index Method (RESIM)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/RESIM.md)
   - [7. Linear Marker Selection Index (LMSI)](https://github.com/RAngelaPG/RIndSel-R/blob/master/inst/md/LMSI.md)
