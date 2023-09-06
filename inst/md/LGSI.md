@@ -74,21 +74,20 @@ Assuming that $H$ and $I_G$ have joint bivariate normal distribution and that $\
 The LGSI properties described in points 1 to 4 of this subsection are the same as the LPSI properties described. This corroborates that the LGSI is an application of the LPSI theory to the GS context.
 
 ```R
-
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
-selval<-5                                                                                    #Selection intensity.
-design<-"lattice"                                                                            #Experimental design.
-corr<-FALSE                                                                                  #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
-rawdata<-TRUE                                                                                #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
-file_nameMARK<-
-one.env<-TRUE                                                                                #Use FALSE for multienviromrent trials.
-block.ex<-FALSE                                                                              #Use FALSE always.
-softR<-""                                                                                    #Use "" always.
-file.covG<-""                                                                                #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
-file_nameTMARK<-
-LG<-1
+datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Data_Phenotypes_LGSI.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
+file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigths_LGSI.csv")   		#name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                    		#Selection intensity.
+design<-"lattice"                                                                            		#Experimental design.
+corr<-FALSE                                                                                  		#You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+rawdata<-TRUE                                                                                		#By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Training population_LGSI.csv")  #name of the file training markers information.
+one.env<-TRUE                                                                                		#Use FALSE for multienviromrent trials.
+block.ex<-FALSE                                                                              		#Use FALSE always.
+softR<-""                                                                                    		#Use "" always.
+file.covG<-""                                                                                		#When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
+file_nameTMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Testing population_LGSI.csv")	#name of the file testing markers information.
+LG<-1													#Interval between selection cycles.
 
 LGSI(datos,file.wgt,selval,design,corr,method,out="outextLGSI.txt",outcsv="outLGSI.csv",rawdata,file_nameMARK,one.env,block.ex,softR,file.covG,file_nameTMARK,LG)
 
