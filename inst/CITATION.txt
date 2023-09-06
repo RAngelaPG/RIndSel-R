@@ -10,7 +10,7 @@ citEntry(
         person("Jesús", "Cerón"),
         person("Francisco", "Rodríguez"),
         person("Jose", "Crossa"),
-        person("Juan", "Buegueño"),
+        person("Juan", "Burgueño"),
     ),
     journal = "CIMMYT Research Data & Software Repository Network",
     year = "2017",
