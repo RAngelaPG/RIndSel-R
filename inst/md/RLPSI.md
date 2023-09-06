@@ -13,7 +13,7 @@ $\Psi =\theta'G \beta - \tau  (\beta'P \beta-1) -v 'C' \beta$
 
 In deriving $\Psi$ over $\beta$ and equate the result to null vector is $\theta'G-2 \tau P \beta -v'C' =0$
 
-Thus, the vector of coefficients of KN that maximizes $\rho_{YZ}^2$ is  $\beta_{KN}=[I -P^{-1}C (C'P^{-1}C)^{-1}C']\beta_S$, where $P^{-1}$ is the inverse matrix $P$ and $\beta_S$ is the vector defined in Equation 3 (the subscript denotes Kempthorne and Nordskog KN). If $A=[ I - P^{-1} C(C'P ^{-1}C)^{-1}C']$, then $\beta_{KN} =A \beta_S$.
+Thus, the vector of coefficients of KN that maximizes $\rho_{YZ}^2$ is  $\beta_{KN}=[I -P^{-1}C (C'P^{-1}C)^{-1}C']\beta_S$. If $A=[ I - P^{-1} C(C'P ^{-1}C)^{-1}C']$, then $\beta_{KN} =A \beta_S$.
 
 ```R
 
