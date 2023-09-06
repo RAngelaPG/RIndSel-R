@@ -1,6 +1,6 @@
 ## Linear Genomic Selection Index (LGSI).
 
-In a similar manner as the linear phenotypic selection index (LPSI), the objective of the LGSI is to predict the net genetic merit $H=w'g$, where $g'=(g_1,g_2,...,g_t)$ ($t=$ number of traits) is a vector of unobservable true breeding values and $w'=(w_1,w_2,...,w_t)$ is a vector of economic weights. Suppose that the genomic breeding values $\gamma_i=Xu_i$ are known; then, the LGSI can be written as
+In a similar manner as the linear phenotypic selection index (LPSI), the objective of the LGSI is to predict the net genetic merit $H=w'g$, where $g'=(g_1,g_2,...,g_t)$ ($t$ number of traits) is a vector of unobservable true breeding values and $w'=(w_1,w_2,...,w_t)$ is a vector of economic weights. Suppose that the genomic breeding values $\gamma_i=Xu_i$ are known; then, the LGSI can be written as
 ```math
 \tag{1}
 \begin{equation}I_G=\beta' \gamma \end{equation}
