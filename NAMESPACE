@@ -1,0 +1,56 @@
+useDynLib(Rindsel, .registration=TRUE)
+
+importFrom("graphics", "abline", "plot")
+importFrom("stats", "cor", "dbeta", "dchisq", "dexp", "dgamma",
+           "dnorm", "model.frame", "model.matrix", "pnorm", "qnorm",
+           "rbeta", "rbinom", "rchisq", "rgamma", "rnorm", "runif",
+           "var", "weighted.mean","sd","complete.cases","factanal","varimax",
+           "cov")
+importFrom("utils", "read.table")
+importFrom("truncnorm", "rtruncnorm")
+importFrom("MASS","mvrnorm")
+importFrom("methods", "is")
+
+export(Adjcovs,
+       AdjBlup,
+      adjmeans,
+      CovMol,
+      data_initialization,
+      BLPSI,
+      PPGLPSI,
+      ESIMIndex,
+      fCovariances,
+      gCovariances,
+      GEBV,
+      ReadTestingLGSI,
+      GenRelLGSI,
+      GEBVLGSI,
+      geCovariances,
+      GenRel,
+      GESIMIndex,
+      IndCoef,
+      IndexName,
+      KNGSIIndex,
+      KNIndex,
+      LGSI,
+      LTIndex,
+      Means,
+      MeansBP,
+      MESIMIndex,
+      Read,
+      ReadMarkers,
+      ReadQTL,
+      Readrest,
+      Readsgn,
+      Readwgt,
+      RESIMIndex,
+      RGESIMIndex,
+      PlotResp,
+      SGSIIndex,
+      SmithIndex,
+      Stan,
+      TallisIndex,
+      TGESIMIndex,
+      TGSIIndex,
+      TraitsSelect
+)
