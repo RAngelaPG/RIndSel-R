@@ -25,7 +25,7 @@ datos<-data.frame(read.csv("https://raw.githubusercontent.com/RAngelaPG/RIndSel-
 datos$REP=as.factor(datos$REP)                                                                    #Transform variables to factor.
 datos$Block=as.factor(datos$Block)                                                                #Transform variables to factor.
 datos$ENTRY=as.factor(datos$ENTRY)                                                                #Transform variables to factor.
-file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_C1_PSI.csv"    #name of the file where we write the economic weights and restrictions. 
 selval<-5                                                                                         #Selection intensity.
 design<-"lattice"                                                                                 #Experimental design.
 corr<-FALSE                                                                                       #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
