@@ -76,22 +76,22 @@ The LGSI properties described in points 1 to 4 of this subsection are the same a
 ```R
 library(Rindsel)
 datos<-data.frame(read.csv("https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/Data_Phenotypes_LGSI.csv",header=T,na.strings=c(NA,".","-"))) #Raw data to analized.
-datos$REP=as.factor(datos$REP)
-datos$Block=as.factor(datos$Block)
-datos$ENTRY=as.factor(datos$ENTRY)
-file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_LGSI.csv" 		#name of the file where we write the economic weights and restrictions. 
-selval<-5                                                                                    		#Selection intensity.
-design<-"lattice"                                                                            		#Experimental design.
-corr<-FALSE                                                                                  		#You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
-method<-"vanraden"											#For create the relationship marker matrix.
-rawdata<-TRUE                                                                                		#By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
-file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Training population_LGSI.csv")  #name of the file training markers information.
-one.env<-TRUE                                                                                		#Use FALSE for multienvironment trials.
-block.ex<-FALSE                                                                              		#Use FALSE always.
-softR<-""                                                                                    		#Use "" always.
-file.covG<-""                                                                                		#When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
-file_nameTMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Testing population_LGSI.csv")	#name of the file testing markers information.
-LG<-1													#Interval between selection cycles.
+datos$REP=as.factor(datos$REP)											#Transform variables to factor.
+datos$Block=as.factor(datos$Block)										#Transform variables to factor.
+datos$ENTRY=as.factor(datos$ENTRY)										#Transform variables to factor.
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_LGSI.csv" 			#name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                    			#Selection intensity.
+design<-"lattice"                                                                            			#Experimental design.
+corr<-FALSE                                                                                  			#You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+method<-"vanraden"												#For create the relationship marker matrix.
+rawdata<-TRUE                                                                                			#By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+file_nameMARK<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/Training_population_LGSI.csv"   #name of the file training markers information.
+one.env<-TRUE                                                                                			#Use FALSE for multienvironment trials.
+block.ex<-FALSE                                                                              			#Use FALSE always.
+softR<-""                                                                                    			#Use "" always.
+file.covG<-""                                                                                			#When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
+file_nameTMARK<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/Testing_population_LGSI.csv"	#name of the file testing markers information.
+LG<-1														#Interval between selection cycles.
 
 LGSI(datos,file.wgt,selval,design,corr,method,out="outextLGSI.txt",outcsv="outLGSI.csv",rawdata,file_nameMARK,one.env,block.ex,softR,file.covG,file_nameTMARK,LG)
 file.show("outextLGSI.csv")
