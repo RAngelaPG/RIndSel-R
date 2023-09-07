@@ -17,18 +17,21 @@ where $Q=T^{-1}K$. Thus, in MESIM, the value that maximizes $\rho_{Y_M Z_M}^2$ u
 ```R
 
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")             #name of the file where we write the economic weights and restrictions. 
-selval<-5                                                                                          #Selection intensity.
-design<-"lattice"                                                                                  #Experimental design.
-corr<-FALSE                                                                                        #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
-method<-"vanraden"																				                                         #For create the relationship marker matrix.
-rawdata<-TRUE                                                                                      #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+datos<-data.frame(read.csv("https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,".","-"))) #Raw data to analized.
+datos$REP=as.factor(datos$REP)                                                                            #Transform variables to factor.
+datos$Block=as.factor(datos$Block)                                                                        #Transform variables to factor.
+datos$ENTRY=as.factor(datos$ENTRY)                                                                        #Transform variables to factor.
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_C1_PSI.csv"            #name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                                 #Selection intensity.
+design<-"lattice"                                                                                         #Experimental design.
+corr<-FALSE                                                                                               #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+method<-"vanraden"																				                                                #For create the relationship marker matrix.
+rawdata<-TRUE                                                                                             #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
 file_nameMARK<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/C1_PSI_S2_05_Haplo.csv"   #name of the file markers information.
-one.env<-TRUE                                                                                      #Use FALSE for multienviromment trials.
-block.ex<-FALSE                                                                                    #Use FALSE always.
-softR<-""                                                                                          #Use "" always.
-file.covG<-""                                                                                      #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
+one.env<-TRUE                                                                                             #Use FALSE for multienviromment trials.
+block.ex<-FALSE                                                                                           #Use FALSE always.
+softR<-""                                                                                                 #Use "" always.
+file.covG<-""                                                                                             #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
 
 MESIMIndex(datos,file.wgt,selval,design,corr,method,out="outextMESIM.txt",outcsv="outMESIM.csv",rawdata,file_nameMARK,one.env,block.ex,softR,file.covG)
 file.show("outextMESIM.txt")
