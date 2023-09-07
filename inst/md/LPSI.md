@@ -19,8 +19,8 @@ Where $\Sigma$ and $S$ are matrices variance-covariance matrix for phenotypic an
 ```R
 
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
+datos<-read.csv(""https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/Data_Phenotypes_LGSI.csv",header=T,na.strings=c(NA,".","-")) #Raw data to analized.
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_LGSI.csv")#name of the file where we write the economic weights and restrictions. 
 selval<-5                                                                                    #Selection intensity.
 design<-"lattice"                                                                            #Experimental design.
 corr<-FALSE                                                                                  #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
@@ -30,7 +30,7 @@ block.ex<-FALSE                                                                 
 softR<-""                                                                                    #Use "" always.
 file.covG<-""                                                                                #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
 
-SmithIndex(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
-
+SmithIndex(datos,file.wgt,selval,design,corr,out="outextLPSI.txt",outcsv="outLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
+file.show("outextLPSI.txt")
 ```
 [Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
