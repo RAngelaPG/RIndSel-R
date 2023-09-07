@@ -80,6 +80,7 @@ file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigths_LGSI.
 selval<-5                                                                                    		#Selection intensity.
 design<-"lattice"                                                                            		#Experimental design.
 corr<-FALSE                                                                                  		#You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+method<-"vanraden"											#For create the relationship marker matrix.
 rawdata<-TRUE                                                                                		#By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
 file_nameMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Training population_LGSI.csv")  #name of the file training markers information.
 one.env<-TRUE                                                                                		#Use FALSE for multienvironment trials.
@@ -90,6 +91,6 @@ file_nameTMARK<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Testing
 LG<-1													#Interval between selection cycles.
 
 LGSI(datos,file.wgt,selval,design,corr,method,out="outextLGSI.txt",outcsv="outLGSI.csv",rawdata,file_nameMARK,one.env,block.ex,softR,file.covG,file_nameTMARK,LG)
-
+file.show("outextLGSI.csv")
 ```
 [Return to examples](https://github.com/RAngelaPG/RIndSel-R/blob/master/Readme.md)
