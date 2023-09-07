@@ -43,16 +43,19 @@ There are additional implications if $b=P^{-1}Gw$. For example, if $P=G$, then $
 ```R
 
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,".","-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigth_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
-selval<-5                                                                                    #Selection intensity.
-design<-"lattice"                                                                            #Experimental design.
-corr<-FALSE                                                                                  #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
-rawdata<-TRUE                                                                                #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
-one.env<-TRUE                                                                                #Use FALSE for multienvironment trials.
-block.ex<-FALSE                                                                              #Use FALSE always.
-softR<-""                                                                                    #Use "" always.
-file.covG<-""                                                                                #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
+datos<-data.frame(read.csv("https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/C1_PSI_05_Phen.csv",header=T,na.strings=c(NA,".","-"))) #Raw data to analized.
+datos$REP=as.factor(datos$REP)                                                                    #Transform variables to factor.
+datos$Block=as.factor(datos$Block)                                                                #Transform variables to factor.
+datos$ENTRY=as.factor(datos$ENTRY)                                                                #Transform variables to factor.
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_C1_PSI.csv")   #name of the file where we write the economic weights and restrictions. 
+selval<-5                                                                                         #Selection intensity.
+design<-"lattice"                                                                                 #Experimental design.
+corr<-FALSE                                                                                       #You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
+rawdata<-TRUE                                                                                     #By default is TRUE when you are using design option "lattice" or "rcbd", use FALSE for design option "AdjMeans".
+one.env<-TRUE                                                                                     #Use FALSE for multienvironment trials.
+block.ex<-FALSE                                                                                   #Use FALSE always.
+softR<-""                                                                                         #Use "" always.
+file.covG<-""                                                                                     #When design is "AdjMeans" and rawdata is FALSE, write the location of your variance and covariance matrix csv file.
 
 BLPSI(datos,file.wgt,selval,design,corr,out="outextBLPSI.txt",outcsv="outBLPSI.csv",rawdata,one.env,block.ex,softR,file.covG)
 file.show("outextBLPSI.txt")
