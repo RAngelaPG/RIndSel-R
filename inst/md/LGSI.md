@@ -75,8 +75,11 @@ The LGSI properties described in points 1 to 4 of this subsection are the same a
 
 ```R
 library(Rindsel)
-datos<-read.csv("https://github.com/RAngelaPG/RIndSel-R/blob/master/data/Data_Phenotypes_LGSI.csv",header=T,na.strings=c(NA,"."."-")) #Raw data to analized.
-file.wgt<-"https://github.com/RAngelaPG/RIndSel-R/blob/master/data/weigths_LGSI.csv")   		#name of the file where we write the economic weights and restrictions. 
+datos<-data.frame(read.csv("https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/Data_Phenotypes_LGSI.csv",header=T,na.strings=c(NA,".","-"))) #Raw data to analized.
+datos$REP=as.factor(datos$REP)
+datos$Block=as.factor(datos$Block)
+datos$ENTRY=as.factor(datos$ENTRY)
+file.wgt<-"https://raw.githubusercontent.com/RAngelaPG/RIndSel-R/main/data/weights_LGSI.csv" 		#name of the file where we write the economic weights and restrictions. 
 selval<-5                                                                                    		#Selection intensity.
 design<-"lattice"                                                                            		#Experimental design.
 corr<-FALSE                                                                                  		#You can decide if you want to work with the correlation matrix instead of variance and covariance matrix.
