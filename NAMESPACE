@@ -1,18 +1,9 @@
 useDynLib(Rindsel, .registration=TRUE)
 
-importFrom("graphics", "abline", "plot")
-importFrom("stats", "cor", "dbeta", "dchisq", "dexp", "dgamma",
-           "dnorm", "model.frame", "model.matrix", "pnorm", "qnorm",
-           "rbeta", "rbinom", "rchisq", "rgamma", "rnorm", "runif",
-           "var", "weighted.mean","sd","complete.cases","factanal","varimax",
-           "cov")
-importFrom("utils", "read.table")
-importFrom("truncnorm", "rtruncnorm")
-importFrom("MASS","mvrnorm")
-importFrom("methods", "is")
+importFrom("Hmisc", "lme4", "MASS", "openxlsx")
 
 export(Adjcovs,
-       AdjBlup,
+      AdjBlup,
       adjmeans,
       CovMol,
       data_initialization,
@@ -52,5 +43,4 @@ export(Adjcovs,
       TallisIndex,
       TGESIMIndex,
       TGSIIndex,
-      TraitsSelect
-)
+      TraitsSelect)
