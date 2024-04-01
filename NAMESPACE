@@ -1,4 +1,4 @@
-importFrom(Hmisc", "lme4", "MASS", "openxlsx")
+importFrom("Hmisc", "lme4", "MASS", "openxlsx")
 export(Adjcovs,
       AdjBlup,
       adjmeans,
