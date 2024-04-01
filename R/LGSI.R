@@ -86,7 +86,7 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   ks <-(100/selval)*(1/sqrt(2*pi))*exp((-qnorm(1-(selval/100))^2)/2)  #selection intensity
   Rsel1<-(ks/LG)*(vGb/sqrt(t(theta)%*%MMVP%*%theta))
   Rsel<-PlotResp(Rsel1,"LGSI",selval)
-  H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MMVP%*%theta  
+  H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MVP%*%theta  
   Gain <- as.vector((ks/LG)*(MMVG%*%theta)/as.numeric(sqrt(t(theta)%*%MMVG%*%theta)))
   Gain <- as.data.frame(t(Gain))
   names(Gain)<-colnames(MVG)
