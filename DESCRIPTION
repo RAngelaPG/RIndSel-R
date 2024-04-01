@@ -8,4 +8,3 @@ Maintainer: Angela Pacheco <r.a.pacheco@cgiar.org>
 Description: Functions for molecular and phenotypic selection indices commonly used in plant breeding  
 Depends: R (>= 3.5.0)
 License: GPL (>= 2)
-Imports: lme4, MASS, openxlsx, Hmisc
