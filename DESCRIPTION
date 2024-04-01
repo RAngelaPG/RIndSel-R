@@ -10,4 +10,3 @@ Depends: R (>= 3.6.0)
 License: GPL (>= 2)
 Imports: Hmisc, lme4, MASS, openxlsx
 LazyLoad: yes
-Suggests: parallel
