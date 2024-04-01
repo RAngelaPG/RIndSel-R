@@ -1,6 +1,6 @@
 useDynLib(Rindsel, .registration=TRUE)
 
-importFrom("Hmisc", "lme4", "MASS", "openxlsx")
+importFrom("lme4", "MASS", "openxlsx", "Hmisc")
 
 export(Adjcovs,
       AdjBlup,
