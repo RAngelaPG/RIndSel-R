@@ -67,7 +67,7 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   MMVP <<- MVM 
   MMVG <<- MVG 
   svdIPG <- svd(solve(MMVG)%*%MMVP)   
-  #LG<-1  
+  LG<-1  
   Yb <<- gebv%*%theta  
   rownames(Yb)<-paste("Entry",as.character(Wt[,1]))
   colnames(Yb)<-"LGSI"    
@@ -84,10 +84,10 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   selentry <- data.frame(as.matrix(selentry)[ord,])
   colnames(selentry)<-"LGSI"
   ks <-(100/selval)*(1/sqrt(2*pi))*exp((-qnorm(1-(selval/100))^2)/2)  #selection intensity
-  Rsel<-PlotResp(t(theta)%*%MMVP%*%theta,"LGSI",selval)
-  #Rsel<-(ks/LG)*sqrt(t(theta)%*%MMVP%*%theta)
+  Rsel1<-(ks/LG)*(vGb/sqrt(t(theta)%*%MMVP%*%theta))
+  Rsel<-PlotResp(Rsel1,"LGSI",selval)
   H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MMVP%*%theta  
-  Gain <- as.vector((ks/LG)*(MMVP%*%theta)/as.numeric(sqrt(t(theta)%*%MMVP%*%theta)))
+  Gain <- as.vector((ks/LG)*(MMVG%*%theta)/as.numeric(sqrt(t(theta)%*%MMVG%*%theta)))
   Gain <- as.data.frame(t(Gain))
   names(Gain)<-colnames(MVG)
   cat("LGSI SELECTION INDEX METHOD","\n",file=out)
