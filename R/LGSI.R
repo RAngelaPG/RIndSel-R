@@ -71,7 +71,6 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   Yb <<- gebv%*%theta  
   rownames(Yb)<-paste("Entry",as.character(Wt[,1]))
   colnames(Yb)<-"LGSI"    
-  #save.image("Util.RData")
   vGb <- t(theta)%*%MMVG%*%theta
   VIDS <- t(theta)%*%MMVP%*%theta
   VDCG <- t(theta)%*%MMVG%*%theta
@@ -86,10 +85,10 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   ks <-(100/selval)*(1/sqrt(2*pi))*exp((-qnorm(1-(selval/100))^2)/2)  #selection intensity
   Rsel1<-(ks/LG)*(vGb/sqrt(t(theta)%*%MMVP%*%theta))
   Rsel<-PlotResp(Rsel1,"LGSI",selval)
-  H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MVP%*%theta  
-  Gain <- as.vector((ks/LG)*(MMVG%*%theta)/as.numeric(sqrt(t(theta)%*%MMVG%*%theta)))
+  H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MMVP%*%theta
+  Gain <- (1/sqrt(t(theta)%*%MMVG%*%theta))*as.vector((ks/LG)*theta%*%MMVP)
   Gain <- as.data.frame(t(Gain))
-  names(Gain)<-colnames(MVG)
+  names(Gain)<-colnames(MMVG)
   cat("LGSI SELECTION INDEX METHOD","\n",file=out)
   cat("\n",paste("GENETIC",mat.name,"MATRIX",sep=" "),"\n",file=out,append=T)
   print.char.matrix(round(MVG,2),file=out,col.names=T,append=T)
