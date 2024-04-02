@@ -67,7 +67,7 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   MMVP <<- MVM 
   MMVG <<- MVG 
   svdIPG <- svd(solve(MMVG)%*%MMVP)   
-  LG<-1  
+  #LG<-1  
   Yb <<- gebv%*%theta  
   rownames(Yb)<-paste("Entry",as.character(Wt[,1]))
   colnames(Yb)<-"LGSI"    
@@ -84,7 +84,7 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   colnames(selentry)<-"LGSI"
   ks <-(100/selval)*(1/sqrt(2*pi))*exp((-qnorm(1-(selval/100))^2)/2)  #selection intensity
   Rsel1<-(ks/LG)*(vGb/sqrt(t(theta)%*%MMVP%*%theta))
-  Rsel<-PlotResp(Rsel1,"LGSI",selval)
+  Rsel<-PlotResp(Rsel1/(ks/LG),"LGSI",selval)
   H2<-t(theta)%*%MMVG%*%theta/t(theta)%*%MMVP%*%theta
   Gain <- (1/sqrt(t(theta)%*%MMVG%*%theta))*as.vector((ks/LG)*theta%*%MMVP)
   Gain <- as.data.frame(t(Gain))
@@ -106,7 +106,7 @@ LGSI<-function(file.dat=NULL,file.wgt=NULL,selval=5,design="lattice",corr=FALSE,
   cat("\n","CORRELATION BETWEEN THE LGSI SELECTION INDEX AND THE BREEDING VALUE:  ",round(corrAnalysis,3),"\n",
       file=out,append=T)
   cat("\n", "RESPONSE TO SELECTION FOR TESTING POPULATION:                        ", 
-      round(Rsel,3), "\n", file = out, append = T)
+      round(Rsel1,3), "\n", file = out, append = T)
   cat("\n", "HERITABILITY FOR TESTING POPULATION:                                 ", 
       round(H2,3), "\n", file = out, append = T)
   cat("\n", paste("EXPECTED GENETIC GAIN PER TRAIT", sep = " "),"\n", file = out, append = T)
